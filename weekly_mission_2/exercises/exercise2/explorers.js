@@ -83,9 +83,8 @@ console.log(encontrado)
 console.log('\n6.Obtén la suma de todos los exercises_completed, usa REDUCE')
 
 console.log(explorers.reduce((acc,actual) => {
-    let suma = acc.exercises_completed  + actual.exercises_completed
-    return suma
-}))
+    acc.exercises_completed  + actual.exercises_completed
+},0))
 
 console.log('\n7.Obtén la validación si al menos uno de los explorers tiene la propiedad exercisesFinished en frontend como true, usa SOME')
 //console.log(explorers.some((element) => {element.}))
